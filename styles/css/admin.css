@@ -1,0 +1,305 @@
+#share5sFileManager{
+    display: inline-block;
+    width: 100%;
+}
+
+#share5sFileManager .fileListing li {
+    background: #FCFCFC;
+    display: inline-block;
+    margin: 0 7px 7px 0;
+    text-align: center;
+    cursor: pointer;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+    z-index: 100;
+    width: 150px;
+    height: 160px;
+    position: relative;
+}
+
+#share5sFileManager .fileListing li:hover {
+    opacity: .5;
+}
+
+#share5sFileManager .fileListing li .thumbIcon {
+    height: 126px;
+    width: 100%;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    display: box;
+    box-pack: center;
+    box-align: center;
+}
+
+
+.fileManagerIcon .fileListing li span.filename,
+.fileManagerList .fileListing li span.filename {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.fileManagerIcon .fileListing li span.filename {
+    display: block;
+    margin-top: 5px;
+    text-align: center;
+    width: 100%;
+
+}
+
+.fileListing .fileOptions {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.fileListing .fileOptions a {
+    display: inline-block;
+    line-height: 1;
+    margin-left: 2px;
+    background: #303641;
+    color: #FFF;
+    width: 22px;
+    height: 18px;
+    line-height: 18px;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    box-shadow: 0px 0px 2px #ffffff;
+}
+
+.fileListing li:hover .fileOptions,
+.fileManagerIcon .fileListing .hoverItem .fileOptions {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform: scale(1, );
+    -ms-transform: scale(1, );
+    transform: scale(1, );
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.fileManagerIcon .fileListing .selected,
+.fileManagerIcon .fileListing .selected:hover,
+.fileManagerList .fileListing .selected,
+.fileManagerList .fileListing .selected:hover {
+    background-color: #5B9BDA!important;
+    border-color: #2975C0;
+    color: #fff;
+}
+
+#share5sFileManager .toolbar-container {
+    padding: 4px;
+    background-color: #fff;
+    box-shadow: 1px 1px 1px #ddd;
+    display: inline-block;
+    width: 100%;
+}
+
+#share5sFileManager .btn-group{
+    float: left;
+}
+
+#share5sFileManager .btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 12px;
+    line-height: 1.42857143;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#share5sFileManager .btn:hover,
+#share5sFileManager .btn:focus {
+    color: #303641;
+    text-decoration: none;
+    outline: none;
+}
+
+#share5sFileManager .btn.disabled,
+#share5sFileManager .btn[disabled] {
+    cursor: not-allowed;
+    pointer-events: none;
+    -webkit-opacity: 0.65;
+    -moz-opacity: 0.65;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
+    opacity: 0.65;
+    filter: alpha(opacity=65);
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#share5sFileManager .btn-white {
+    color: #303641;
+    background-color: #ffffff;
+    border-color: #ebebeb;
+}
+
+#share5sFileManager .btn-white:hover,
+#share5sFileManager .btn-white:focus {
+    color: #303641;
+    background-color: #ebebeb;
+    border-color: #e0e0e0;
+}
+
+#share5sFileManager .btn-success,
+#share5sFileManager .btn-green {
+    color: #ffffff;
+    background-color: #00a651;
+    border-color: #00a651;
+}
+
+#share5sFileManager .btn-green:hover,
+#share5sFileManager .btn-green:focus {
+    color: #ffffff;
+    background-color: #007d3d;
+    border-color: #006933;
+}
+
+#share5sFileManager .btn-white.disabled{
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+#share5sFileManager .btn-info {
+    color: #fff;
+    background-color: #21a9e1;
+    border-color: #21a9e1;
+}
+
+#share5sFileManager .btn-info:hover,
+#share5sFileManager .btn-info:focus,
+#share5sFileManager .btn-info:active,
+#share5sFileManager .btn-info.active {
+    color: #fff;
+    background-color: #1a8fbf;
+    border-color: #1782ad;
+}
+
+#share5sFileManager #share5s-loading{
+    position: fixed;
+    top: 0%;
+    z-index: 9999;
+    background: #ffffff6b;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#share5sFileManager #share5s-loading img{
+    margin: 10% 30%;
+}
+
+#share5sFileManager .share5-back{
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 12px;
+    line-height: 1.42857143;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    color: #303641;
+    background-color: #ffffff;
+    border-color: #ebebeb;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: fantasy;
+}
+
+#share5sFileManager #share5s-form-upload{
+    display: none;
+}
+
+#share5sFileManager #share5s-form-upload #share5s-drop-upload{
+    padding: 30px 20px;
+    border: 2px solid #dddddd;
+    background: white;
+    text-align: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#share5sFileManager #share5s-form-upload #share5s-drop-upload p{
+    font-size: 20px;
+}
+
+#share5sFileManager #share5s-form-upload #share5s-progress{
+    height: 15px;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    background: #dfdddd;
+    border-radius: 3px;
+}
+
+#share5sFileManager #share5s-form-upload #share5s-progress .share5s-progress-bar{
+    height: 100%;
+    background: #03ab4e;
+    width: 0%;
+}
+
+#share5sFileManager #share5s-file-list .upload-item{
+    padding: 5px;
+    background: #ddd;
+    border-radius: 3px;
+    margin-top: 5px;
+    border: 1px solid #979595;
+}
+
+#share5sFileManager #share5s-file-list .upload-item .file-name{
+    color: #0851f3;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+#share5sFileManager #share5s-file-list .upload-item .file-name .file-size{
+    float: right;
+    font-size: 11px;
+    color: #868585;
+}
+
+#share5sFileManager #share5s-file-list .upload-item .file-progress{
+    height: 2px;
+    background: white;
+}
+
+#share5sFileManager #share5s-file-list .upload-item .file-progress .file-progress-bar{
+    width: 0%;
+    background: #060;
+    height: 100%;
+    margin-top: 2px;
+}
